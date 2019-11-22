@@ -4,4 +4,11 @@ layout = "default"
 description = "This is home page"
 is_hidden = 0
 ==
-<h1>Welcome</h1>
+<br>
+<div class="jumbotron">
+    <h1>{{ this.theme.getConfig.name }}</h1>
+    <p>{{this.theme.site_description}}</p>
+    <p>
+        <a href="{{ 'about'|page }}" class="btn btn-primary">Read More</a>
+    </p>
+</div>

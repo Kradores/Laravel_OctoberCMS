@@ -44,13 +44,22 @@ class __TwigTemplate_6602f0b7281b2827a6de81b1bc7ec5ec21d815e06847471467b3b91b245
     <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">
         <ul class=\"navbar-nav mr-auto\">
             <li class=\"nav-item active\">
-            <a class=\"nav-link\" href=\"#\">Home</a>
+            <a class=\"nav-link\" href=\"";
+        // line 10
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
+        echo "\">Home</a>
             </li>
             <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"#\">About</a>
+            <a class=\"nav-link\" href=\"";
+        // line 13
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("about");
+        echo "\">About</a>
             </li>
             <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"#\">Contact</a>
+            <a class=\"nav-link\" href=\"";
+        // line 16
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("contact");
+        echo "\">Contact</a>
             </li>
         </ul>
     </div>
@@ -69,7 +78,7 @@ class __TwigTemplate_6602f0b7281b2827a6de81b1bc7ec5ec21d815e06847471467b3b91b245
 
     public function getDebugInfo()
     {
-        return array (  38 => 2,  35 => 1,);
+        return array (  61 => 16,  55 => 13,  49 => 10,  38 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -83,13 +92,13 @@ class __TwigTemplate_6602f0b7281b2827a6de81b1bc7ec5ec21d815e06847471467b3b91b245
     <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">
         <ul class=\"navbar-nav mr-auto\">
             <li class=\"nav-item active\">
-            <a class=\"nav-link\" href=\"#\">Home</a>
+            <a class=\"nav-link\" href=\"{{ 'home'|page }}\">Home</a>
             </li>
             <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"#\">About</a>
+            <a class=\"nav-link\" href=\"{{ 'about'|page }}\">About</a>
             </li>
             <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"#\">Contact</a>
+            <a class=\"nav-link\" href=\"{{ 'contact'|page }}\">Contact</a>
             </li>
         </ul>
     </div>
